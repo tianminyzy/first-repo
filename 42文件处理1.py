@@ -1,0 +1,15 @@
+file = open('dingzhen.txt','a',encoding='utf-8')
+file.write('雪豹闭嘴!\n')
+file.close()
+file = open('dingzhen.txt','r',encoding='utf-8')
+content = file.read()
+print('Using read():')
+print(content)
+line1 = file.readline()
+print(line1, end='')
+line2 = file.readline()
+print(line2, end='')
+lines = file.readlines()
+
+for line in lines:
+  print(line, end='')
